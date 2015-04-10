@@ -35,7 +35,7 @@ This is a fork of the code distributed with MonetDB that adds support
 for asynchronous operation (requires greenlet_) and bulk I/O
 with ``COPY``.
 
-.. _greenlet https://greenlet.readthedocs.org/en/latest/
+.. _greenlet: https://greenlet.readthedocs.org/en/latest/
 
 
 Installation
