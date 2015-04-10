@@ -32,9 +32,10 @@ and doesn't depend on any monetdb libraries.  It has support for
 Python 3.2+ and is Python DBAPI 2.0 compatible.
 
 This is a fork of the code distributed with MonetDB that adds support
-for asynchronous operation (requires 
-greenlet<https://greenlet.readthedocs.org/en/latest/>_) and bulk I/O
+for asynchronous operation (requires greenlet_) and bulk I/O
 with ``COPY``.
+
+.. _greenlet https://greenlet.readthedocs.org/en/latest/
 
 
 Installation
