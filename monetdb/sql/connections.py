@@ -21,7 +21,6 @@ import platform
 from monetdb.sql import cursors
 from monetdb import exceptions
 from monetdb import mapi
-from greenlet import greenlet
 
 logger = logging.getLogger("monetdb")
 
