@@ -481,13 +481,13 @@ class Cursor(object):
         self.__store_result(block)
 
     def copy_from(self, file, table, field_separator=",", record_separator="\\n",
-                  string_quote=None, null_string=None, locked=False):
+                  string_quote=None, null_string=None, locked=False, offset=None):
         """Copy data into table from file-like object
 
         The contents of `file` must end with `record_separator`.
         """
-
-        command = "COPY INTO {} FROM STDIN DELIMITERS '{}', '{}'".format(table, field_separator,
+        offset = "OFFSET {}".format(offset) if offset else ""
+        command = "COPY {} INTO {} FROM STDIN DELIMITERS '{}', '{}'".format(offset, table, field_separator,
                                                                          record_separator)
         if string_quote is not None:
             command += ", '{}'".format(string_quote)
