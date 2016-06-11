@@ -31,5 +31,5 @@ from monetdb import exceptions
 
 __all__ = ["sql", "mapi"]
 
-# for backwards compatability
+# for backwards compatibility
 monetdb_exceptions = exceptions

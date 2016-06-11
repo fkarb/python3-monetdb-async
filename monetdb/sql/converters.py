@@ -25,7 +25,7 @@ from monetdb.sql import pythonize
 
 class Pythonizer:
     """
-    backwards compatible class, was used for convertion from
+    backwards compatible class, was used for conversion from
     MonetDB column types to python types. You should use
     monetdb.sql.pythonize now.
     """
@@ -41,7 +41,7 @@ class Pythonizer:
 
 class Monetizer:
     """
-    backwards compatible class, was used for convertion from
+    backwards compatible class, was used for conversion from
     python types to MonetDB column types. You should use
     monetdb.sql.monetize now.
     """
