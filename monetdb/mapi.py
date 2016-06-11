@@ -354,5 +354,5 @@ class Connection(object):
             self.__class__.__module__, self.__class__.__name__, id(self), self.hostname, self.port,
             self.database)
 
-#backwards compatiblity
+#backwards compatibility
 Server = Connection

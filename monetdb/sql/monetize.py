@@ -77,7 +77,7 @@ mapping_dict = dict(mapping)
 
 def convert(data):
     """
-    Return the appropriate convertion function based upon the python type.
+    Return the appropriate conversion function based upon the python type.
     """
     if type(data) in mapping_dict:
         return mapping_dict[type(data)](data)
